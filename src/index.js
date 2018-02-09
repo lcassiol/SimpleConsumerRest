@@ -29,7 +29,7 @@ export default class App extends Component {
   createMessage = async () =>{
       try {
 
-          const response = await api.post('' , {
+          const response = await api.post('/message' , {
             to: 'Diego Fernandes',
             message: 'Ei me da uma ceneca da RocketSeat?',
           },
@@ -45,7 +45,7 @@ export default class App extends Component {
 
   listMessages = async () =>{
     try {
-        const response = await api.get('',{});
+        const response = await api.get('/message',{});
 
         this.setState( { messages: response.data });
         console.log(response.data);

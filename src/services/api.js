@@ -1,7 +1,7 @@
 import { create } from 'apisauce';
 
 const api = create({
-  baseURL: 'https://guarded-dawn-52771.herokuapp.com/message',
+  baseURL: 'https://guarded-dawn-52771.herokuapp.com',
 });
 
 api.addResponseTransform(response =>{
