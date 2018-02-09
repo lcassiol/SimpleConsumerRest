@@ -1,0 +1,3 @@
+rootProject.name = 'SimpleRest'
+
+include ':app'
